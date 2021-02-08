@@ -1,6 +1,6 @@
 package com.hao.socket.client.impl.client;
 
-import com.hao.core.iocore.interfaces.IPulseSendable;
+import com.hao.socket.core.iocore.interfaces.IPulseSendable;
 import com.hao.socket.client.impl.exceptions.DogDeadException;
 import com.hao.socket.client.sdk.client.WhSocketOptions;
 import com.hao.socket.client.sdk.client.bean.IPulse;

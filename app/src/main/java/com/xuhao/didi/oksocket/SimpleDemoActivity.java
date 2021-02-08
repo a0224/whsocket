@@ -12,9 +12,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.hao.core.iocore.interfaces.IPulseSendable;
-import com.hao.core.iocore.interfaces.ISendable;
-import com.hao.core.pojo.OriginalData;
+import com.hao.socket.core.iocore.interfaces.IPulseSendable;
+import com.hao.socket.core.iocore.interfaces.ISendable;
+import com.hao.socket.core.pojo.OriginalData;
 import com.xuhao.didi.oksocket.adapter.LogAdapter;
 import com.xuhao.didi.oksocket.data.HandShakeBean;
 import com.xuhao.didi.oksocket.data.LogBean;

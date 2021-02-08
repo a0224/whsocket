@@ -1,9 +1,9 @@
 package com.hao.socket.client.sdk.client.action;
 
 
-import com.hao.core.iocore.interfaces.ISendable;
-import com.hao.core.pojo.OriginalData;
-import com.hao.core.iocore.interfaces.IPulseSendable;
+import com.hao.socket.core.iocore.interfaces.ISendable;
+import com.hao.socket.core.pojo.OriginalData;
+import com.hao.socket.core.iocore.interfaces.IPulseSendable;
 import com.hao.socket.client.sdk.client.ConnectionInfo;
 
 public interface ISocketActionListener {

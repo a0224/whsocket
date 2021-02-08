@@ -14,7 +14,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.hao.core.pojo.OriginalData;
+import com.hao.socket.core.pojo.OriginalData;
 import com.xuhao.didi.oksocket.adapter.LogAdapter;
 import com.xuhao.didi.oksocket.data.AdminHandShakeBean;
 import com.xuhao.didi.oksocket.data.AdminKickOfflineBean;

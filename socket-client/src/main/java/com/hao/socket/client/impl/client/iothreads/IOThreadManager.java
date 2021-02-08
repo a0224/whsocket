@@ -2,14 +2,14 @@ package com.hao.socket.client.impl.client.iothreads;
 
 
 import com.hao.socket.client.impl.exceptions.ManuallyDisconnectException;
-import com.hao.core.iocore.ReaderImpl;
-import com.hao.core.iocore.WriterImpl;
-import com.hao.core.iocore.interfaces.IReader;
-import com.hao.core.iocore.interfaces.ISendable;
-import com.hao.core.iocore.interfaces.IStateSender;
-import com.hao.core.iocore.interfaces.IWriter;
-import com.hao.core.protocol.IReaderProtocol;
-import com.hao.core.utils.SLog;
+import com.hao.socket.core.iocore.ReaderImpl;
+import com.hao.socket.core.iocore.WriterImpl;
+import com.hao.socket.core.iocore.interfaces.IReader;
+import com.hao.socket.core.iocore.interfaces.ISendable;
+import com.hao.socket.core.iocore.interfaces.IStateSender;
+import com.hao.socket.core.iocore.interfaces.IWriter;
+import com.hao.socket.core.protocol.IReaderProtocol;
+import com.hao.socket.core.utils.SLog;
 import com.hao.socket.client.sdk.client.WhSocketOptions;
 import com.hao.socket.common.interfaces.basic.AbsLoopThread;
 import com.hao.socket.common.interfaces.common_interfacies.IIOManager;

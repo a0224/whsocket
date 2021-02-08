@@ -1,6 +1,6 @@
 package com.hao.socket.client.sdk.client.action;
 
-import com.hao.core.iocore.interfaces.IOAction;
+import com.hao.socket.core.iocore.interfaces.IOAction;
 
 public interface IAction extends IOAction {
     //数据key

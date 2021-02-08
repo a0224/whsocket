@@ -1,7 +1,7 @@
 package com.xuhao.didi.oksocket.data;
 
 
-import com.hao.core.iocore.interfaces.IPulseSendable;
+import com.hao.socket.core.iocore.interfaces.IPulseSendable;
 
 import org.json.JSONException;
 import org.json.JSONObject;

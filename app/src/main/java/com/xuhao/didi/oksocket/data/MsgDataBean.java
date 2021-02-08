@@ -1,7 +1,7 @@
 package com.xuhao.didi.oksocket.data;
 
 
-import com.hao.core.iocore.interfaces.ISendable;
+import com.hao.socket.core.iocore.interfaces.ISendable;
 
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;

@@ -3,9 +3,9 @@ package com.hao.socket.client.sdk.client.connection;
 import com.hao.socket.client.impl.client.PulseManager;
 import com.hao.socket.client.sdk.client.ConnectionInfo;
 import com.hao.socket.client.sdk.client.action.ISocketActionListener;
-import com.hao.core.iocore.interfaces.ISendable;
-import com.hao.core.pojo.OriginalData;
-import com.hao.core.iocore.interfaces.IPulseSendable;
+import com.hao.socket.core.iocore.interfaces.ISendable;
+import com.hao.socket.core.pojo.OriginalData;
+import com.hao.socket.core.iocore.interfaces.IPulseSendable;
 
 import java.util.LinkedHashSet;
 import java.util.Set;

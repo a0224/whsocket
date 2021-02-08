@@ -3,7 +3,7 @@ package com.hao.socket.client.sdk.client.connection;
 
 import com.hao.socket.client.impl.exceptions.ManuallyDisconnectException;
 import com.hao.socket.client.sdk.client.ConnectionInfo;
-import com.hao.core.utils.SLog;
+import com.hao.socket.core.utils.SLog;
 import com.hao.socket.common.interfaces.basic.AbsLoopThread;
 import com.hao.socket.common.interfaces.utils.ThreadUtils;
 

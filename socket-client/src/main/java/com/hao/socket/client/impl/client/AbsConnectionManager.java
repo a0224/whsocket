@@ -26,7 +26,7 @@ public abstract class AbsConnectionManager implements IConnectionManager {
     /**
      * 状态机
      */
-    protected com.hao.socket.client.impl.client.action.ActionDispatcher mActionDispatcher;
+    protected ActionDispatcher mActionDispatcher;
 
     public AbsConnectionManager(ConnectionInfo info) {
         this(info, null);

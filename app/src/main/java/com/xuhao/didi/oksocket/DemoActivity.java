@@ -19,9 +19,9 @@ import android.widget.Toast;
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
-import com.hao.core.iocore.interfaces.ISendable;
-import com.hao.core.pojo.OriginalData;
-import com.hao.core.utils.SLog;
+import com.hao.socket.core.iocore.interfaces.ISendable;
+import com.hao.socket.core.pojo.OriginalData;
+import com.hao.socket.core.utils.SLog;
 import com.xuhao.didi.oksocket.data.MsgDataBean;
 import com.hao.socket.client.sdk.client.WhSocketOptions;
 import com.hao.socket.common.interfaces.common_interfacies.server.IClient;

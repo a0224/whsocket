@@ -1,6 +1,6 @@
 package com.hao.socket.client.impl.client;
 
-import com.hao.core.utils.SLog;
+import com.hao.socket.core.utils.SLog;
 import com.hao.socket.client.impl.client.abilities.IConnectionSwitchListener;
 import com.hao.socket.client.sdk.client.ConnectionInfo;
 import com.hao.socket.client.sdk.client.WhSocketOptions;

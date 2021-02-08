@@ -1,8 +1,8 @@
 package com.hao.socket.client.impl.client;
 
 import com.hao.socket.client.impl.client.action.ActionHandler;
-import com.hao.core.iocore.interfaces.ISendable;
-import com.hao.core.utils.SLog;
+import com.hao.socket.core.iocore.interfaces.ISendable;
+import com.hao.socket.core.utils.SLog;
 import com.hao.socket.client.impl.client.iothreads.IOThreadManager;
 import com.hao.socket.client.impl.exceptions.ManuallyDisconnectException;
 import com.hao.socket.client.impl.exceptions.UnConnectException;
