@@ -4,10 +4,6 @@ package com.android.socket.client.common.interfaces.common_interfacies;
 import com.android.socket.client.core.iocore.interfaces.IIOCoreOptions;
 import com.android.socket.client.core.iocore.interfaces.ISendable;
 
-/**
- * Created by xuhao on 2017/5/16.
- */
-
 public interface IIOManager<E extends IIOCoreOptions> {
     void startEngine();
 

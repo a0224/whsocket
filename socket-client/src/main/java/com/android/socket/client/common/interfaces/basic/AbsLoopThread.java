@@ -2,9 +2,6 @@ package com.android.socket.client.common.interfaces.basic;
 
 import com.android.socket.client.core.utils.SLog;
 
-/**
- * Created by xuhao on 15/6/18.
- */
 public abstract class AbsLoopThread implements Runnable {
     public volatile Thread thread = null;
 

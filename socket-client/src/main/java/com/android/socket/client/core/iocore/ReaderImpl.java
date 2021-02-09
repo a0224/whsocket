@@ -10,10 +10,6 @@ import com.android.socket.client.core.utils.SLog;
 import java.io.IOException;
 import java.nio.ByteBuffer;
 
-/**
- * Created by xuhao on 2017/5/31.
- */
-
 public class ReaderImpl extends AbsReader {
 
     private ByteBuffer mRemainingBuf;
