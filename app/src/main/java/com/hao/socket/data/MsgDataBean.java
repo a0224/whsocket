@@ -1,15 +1,11 @@
 package com.hao.socket.data;
 
 
-import com.android.socket.core.iocore.interfaces.ISendable;
+import com.android.socket.client.core.iocore.interfaces.ISendable;
 
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.nio.charset.Charset;
-
-/**
- * Created by Tony on 2017/10/24.
- */
 
 public class MsgDataBean implements ISendable {
     private String content = "";

@@ -5,21 +5,13 @@ import javax.net.ssl.SSLSocketFactory;
 import javax.net.ssl.TrustManager;
 
 public class WhSocketSSLConfig {
-    /**
-     * 安全协议名称(缺省为 SSL)
-     */
+
     private String mProtocol;
-    /**
-     * 信任证书管理器(缺省为 X509)
-     */
+
     private TrustManager[] mTrustManagers;
-    /**
-     * 证书秘钥管理器(缺省为 null)
-     */
+
     private KeyManager[] mKeyManagers;
-    /**
-     * 自定义 SSLFactory(缺省为 null)
-     */
+
     private SSLSocketFactory mCustomSSLFactory;
 
     private WhSocketSSLConfig() {

@@ -1,17 +1,17 @@
 package com.android.socket.client.sdk;
 
 
-import com.android.socket.client.impl.client.ManagerHolder;
+import com.android.socket.client.impl.ManagerHolder;
 import com.android.socket.client.sdk.client.WhSocketOptions;
 import com.android.socket.client.sdk.client.ConnectionInfo;
 import com.android.socket.client.sdk.client.connection.IConnectionManager;
-import com.android.socket.common.interfaces.common_interfacies.dispatcher.IRegister;
-import com.android.socket.common.interfaces.common_interfacies.server.IServerActionListener;
-import com.android.socket.common.interfaces.common_interfacies.server.IServerManager;
+import com.android.socket.client.common.interfaces.common_interfacies.dispatcher.IRegister;
+import com.android.socket.client.common.interfaces.common_interfacies.server.IServerActionListener;
+import com.android.socket.client.common.interfaces.common_interfacies.server.IServerManager;
 
 public class WhSocket {
 
-    private static com.android.socket.client.impl.client.ManagerHolder holder = ManagerHolder.getInstance();
+    private static ManagerHolder holder = ManagerHolder.getInstance();
 
     public static IRegister<IServerActionListener, IServerManager> server(int serverPort) {
         return (IRegister<IServerActionListener, IServerManager>) holder.getServer(serverPort);

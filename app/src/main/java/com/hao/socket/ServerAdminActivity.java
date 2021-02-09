@@ -14,14 +14,13 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.hao.socket.R;
-import com.android.socket.core.pojo.OriginalData;
+import com.android.socket.client.core.pojo.OriginalData;
 import com.hao.socket.adapter.LogAdapter;
 import com.hao.socket.data.AdminHandShakeBean;
 import com.hao.socket.data.AdminKickOfflineBean;
 import com.hao.socket.data.LogBean;
 import com.hao.socket.data.RestartBean;
-import com.android.socket.client.impl.client.action.ActionDispatcher;
+import com.android.socket.client.impl.action.ActionDispatcher;
 import com.android.socket.client.sdk.WhSocket;
 import com.android.socket.client.sdk.client.ConnectionInfo;
 import com.android.socket.client.sdk.client.WhSocketOptions;
@@ -30,9 +29,6 @@ import com.android.socket.client.sdk.client.connection.IConnectionManager;
 
 import java.nio.charset.Charset;
 
-/**
- * Created by Tony on 2017/10/24.
- */
 
 public class ServerAdminActivity extends AppCompatActivity {
     private ConnectionInfo mInfo;

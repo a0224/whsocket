@@ -3,17 +3,11 @@ package com.android.socket.client.sdk.client;
 import java.io.Serializable;
 
 public final class ConnectionInfo implements Serializable, Cloneable {
-    /**
-     * IPV4地址
-     */
+
     private String mIp;
-    /**
-     * 连接服务器端口号
-     */
+
     private int mPort;
-    /**
-     * 当此IP地址Ping不通时的备用IP
-     */
+
     private ConnectionInfo mBackupInfo;
 
     public ConnectionInfo(String ip, int port) {
@@ -21,38 +15,18 @@ public final class ConnectionInfo implements Serializable, Cloneable {
         this.mPort = port;
     }
 
-    /**
-     * 获取传入的IP地址
-     *
-     * @return ip地址
-     */
     public String getIp() {
         return mIp;
     }
 
-    /**
-     * 获取传入的端口号
-     *
-     * @return 端口号
-     */
     public int getPort() {
         return mPort;
     }
 
-    /**
-     * 获取备用的Ip和端口号
-     *
-     * @return 备用的端口号和IP地址
-     */
     public ConnectionInfo getBackupInfo() {
         return mBackupInfo;
     }
 
-    /**
-     * 设置备用的IP和端口号,可以不设置
-     *
-     * @param backupInfo 备用的IP和端口号信息
-     */
     public void setBackupInfo(ConnectionInfo backupInfo) {
         mBackupInfo = backupInfo;
     }

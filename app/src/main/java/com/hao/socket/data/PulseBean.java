@@ -1,7 +1,7 @@
 package com.hao.socket.data;
 
 
-import com.android.socket.core.iocore.interfaces.IPulseSendable;
+import com.android.socket.client.core.iocore.interfaces.IPulseSendable;
 
 import org.json.JSONException;
 import org.json.JSONObject;

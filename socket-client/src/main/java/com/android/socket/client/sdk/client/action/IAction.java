@@ -1,6 +1,6 @@
 package com.android.socket.client.sdk.client.action;
 
-import com.android.socket.core.iocore.interfaces.IOAction;
+import com.android.socket.client.core.iocore.interfaces.IOAction;
 
 public interface IAction extends IOAction {
     //数据key

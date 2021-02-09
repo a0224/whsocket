@@ -12,15 +12,14 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.hao.socket.R;
-import com.android.socket.core.iocore.interfaces.IPulseSendable;
-import com.android.socket.core.iocore.interfaces.ISendable;
-import com.android.socket.core.pojo.OriginalData;
+import com.android.socket.client.core.iocore.interfaces.IPulseSendable;
+import com.android.socket.client.core.iocore.interfaces.ISendable;
+import com.android.socket.client.core.pojo.OriginalData;
 import com.hao.socket.adapter.LogAdapter;
 import com.hao.socket.data.HandShakeBean;
 import com.hao.socket.data.LogBean;
 import com.hao.socket.data.MsgDataBean;
-import com.android.socket.client.impl.client.action.ActionDispatcher;
+import com.android.socket.client.impl.action.ActionDispatcher;
 import com.android.socket.client.sdk.WhSocket;
 import com.android.socket.client.sdk.client.ConnectionInfo;
 import com.android.socket.client.sdk.client.WhSocketOptions;
@@ -31,10 +30,6 @@ import com.android.socket.client.sdk.client.connection.NoneReconnect;
 import java.nio.charset.Charset;
 
 import static android.widget.Toast.LENGTH_SHORT;
-
-/**
- * Created by Tony on 2017/10/24.
- */
 
 public class SimpleDemoActivity extends AppCompatActivity {
     private ConnectionInfo mInfo;

@@ -3,21 +3,16 @@ package com.android.socket.client.sdk.client.connection;
 
 import com.android.socket.client.impl.exceptions.ManuallyDisconnectException;
 import com.android.socket.client.sdk.client.ConnectionInfo;
-import com.android.socket.core.utils.SLog;
-import com.android.socket.common.interfaces.basic.AbsLoopThread;
-import com.android.socket.common.interfaces.utils.ThreadUtils;
+import com.android.socket.client.core.utils.SLog;
+import com.android.socket.client.common.interfaces.basic.AbsLoopThread;
+import com.android.socket.client.common.interfaces.utils.ThreadUtils;
 
 import java.util.Iterator;
 
 public class DefaultReconnectManager extends AbsReconnectionManager {
 
-    /**
-     * 最大连接失败次数,不包括断开异常
-     */
     private static final int MAX_CONNECTION_FAILED_TIMES = 12;
-    /**
-     * 连接失败次数,不包括断开异常
-     */
+
     private int mConnectionFailedTimes = 0;
 
     private volatile ReconnectTestingThread mReconnectTestingThread;
@@ -28,7 +23,7 @@ public class DefaultReconnectManager extends AbsReconnectionManager {
 
     @Override
     public void onSocketDisconnection(com.android.socket.client.sdk.client.ConnectionInfo info, String action, Exception e) {
-        if (isNeedReconnect(e)) {//break with exception
+        if (isNeedReconnect(e)) {
             reconnectDelay();
         } else {
             resetThread();
@@ -68,12 +63,6 @@ public class DefaultReconnectManager extends AbsReconnectionManager {
         }
     }
 
-    /**
-     * 是否需要重连
-     *
-     * @param e
-     * @return
-     */
     private boolean isNeedReconnect(Exception e) {
         synchronized (mIgnoreDisconnectExceptionList) {
             if (e != null && !(e instanceof ManuallyDisconnectException)) {//break with exception
@@ -90,19 +79,12 @@ public class DefaultReconnectManager extends AbsReconnectionManager {
         }
     }
 
-
-    /**
-     * 重置重连线程,关闭线程
-     */
     private synchronized void resetThread() {
         if (mReconnectTestingThread != null) {
             mReconnectTestingThread.shutdown();
         }
     }
 
-    /**
-     * 开始延迟重连
-     */
     private void reconnectDelay() {
         synchronized (mReconnectTestingThread) {
             if (mReconnectTestingThread.isShutdown()) {
@@ -117,9 +99,7 @@ public class DefaultReconnectManager extends AbsReconnectionManager {
     }
 
     private class ReconnectTestingThread extends AbsLoopThread {
-        /**
-         * 延时连接时间
-         */
+
         private long mReconnectTimeDelay = 10 * 1000;
 
         @Override

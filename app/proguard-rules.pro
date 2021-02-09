@@ -29,7 +29,7 @@
 -dontwarn com.xuhao.didi.core.**
 
 -keep class com.android.socket.client.** { *; }
--keep class com.android.socket.common.** { *; }
+-keep class com.android.socket.client.common.** { *; }
 -keep class com.android.socket.server.** { *; }
 -keep class com.android.didi.core.** { *; }
 

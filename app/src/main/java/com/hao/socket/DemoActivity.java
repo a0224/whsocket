@@ -19,14 +19,14 @@ import android.widget.Toast;
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
-import com.android.socket.core.iocore.interfaces.ISendable;
-import com.android.socket.core.pojo.OriginalData;
-import com.android.socket.core.utils.SLog;
+import com.android.socket.client.core.iocore.interfaces.ISendable;
+import com.android.socket.client.core.pojo.OriginalData;
+import com.android.socket.client.core.utils.SLog;
 import com.hao.socket.data.MsgDataBean;
 import com.android.socket.client.sdk.client.WhSocketOptions;
-import com.android.socket.common.interfaces.common_interfacies.server.IClient;
-import com.android.socket.common.interfaces.common_interfacies.server.IClientIOCallback;
-import com.android.socket.common.interfaces.common_interfacies.server.IClientPool;
+import com.android.socket.client.common.interfaces.common_interfacies.server.IClient;
+import com.android.socket.client.common.interfaces.common_interfacies.server.IClientIOCallback;
+import com.android.socket.client.common.interfaces.common_interfacies.server.IClientPool;
 
 import java.net.Inet4Address;
 import java.net.InetAddress;
@@ -35,10 +35,6 @@ import java.net.SocketException;
 import java.nio.charset.Charset;
 import java.util.Arrays;
 import java.util.Enumeration;
-
-/**
- * Created by didi on 2018/4/20.
- */
 
 public class DemoActivity extends AppCompatActivity implements IClientIOCallback {
 

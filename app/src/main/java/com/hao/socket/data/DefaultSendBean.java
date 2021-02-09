@@ -1,15 +1,11 @@
 package com.hao.socket.data;
 
 
-import com.android.socket.core.iocore.interfaces.ISendable;
+import com.android.socket.client.core.iocore.interfaces.ISendable;
 
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.nio.charset.Charset;
-
-/**
- * Created by didi on 2018/6/4.
- */
 
 public class DefaultSendBean implements ISendable {
     protected String content = "";
