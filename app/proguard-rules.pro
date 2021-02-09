@@ -28,18 +28,18 @@
 -dontwarn com.xuhao.didi.socket.server.**
 -dontwarn com.xuhao.didi.core.**
 
--keep class com.xuhao.didi.socket.client.** { *; }
--keep class com.xuhao.didi.socket.common.** { *; }
--keep class com.xuhao.didi.socket.server.** { *; }
--keep class com.xuhao.didi.core.** { *; }
+-keep class com.android.socket.client.** { *; }
+-keep class com.android.socket.common.** { *; }
+-keep class com.android.socket.server.** { *; }
+-keep class com.android.didi.core.** { *; }
 
 -keepclassmembers enum * {
     public static **[] values();
     public static ** valueOf(java.lang.String);
 }
--keep class com.xuhao.didi.socket.client.sdk.client.OkSocketOptions$* {
+-keep class com.android.socket.client.sdk.client.OkSocketOptions$* {
     *;
 }
--keep class com.xuhao.didi.socket.server.impl.OkServerOptions$* {
+-keep class com.android.socket.server.impl.OkServerOptions$* {
     *;
 }

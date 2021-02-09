@@ -2,18 +2,13 @@ apply plugin: 'com.android.application'
 
 android {
     signingConfigs {
-        release {
-            keyAlias 'xuhao'
-            keyPassword '123456'
-            storeFile file('/Users/xuhao/Documents/publish_project/oksocket/keystore/release')
-            storePassword '123456'
-        }
+
     }
     compileSdkVersion 26
     buildToolsVersion '26.0.2'
     defaultConfig {
-        applicationId "com.android.socket"
-        minSdkVersion 14
+        applicationId "com.hao.socket"
+        minSdkVersion 19
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
@@ -24,18 +19,19 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
     lintOptions {
         abortOnError false
     }
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile 'com.android.support:appcompat-v7:26.1.0'
-    compile 'com.android.support:design:26.1.0'
-    compile 'com.google.code.gson:gson:2.8.0'
-//        api 'com.tonystark.android:socket:latest.release'
-//        api 'com.tonystark.android:socket-server:latest.release'
-        api project(path: ':socket-client')
-      //  api project(path: ':socket-server')
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:design:26.1.0'
+    implementation 'com.google.code.gson:gson:2.8.0'
+    api project(path: ':socket-client')
 }
